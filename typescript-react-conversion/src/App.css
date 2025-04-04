@@ -1,0 +1,83 @@
+.App {
+  text-align: center; /* Centre le contenu horizontalement */
+}
+
+.App-logo {
+  height: 40vmin; /* Définit la hauteur du logo en fonction de la taille de la fenêtre */
+  pointer-events: none; /* Désactive les interactions avec le logo */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Ajoute une animation de rotation au logo */
+  }
+}
+
+.App-header {
+  background-color: #282c34; /* Définit une couleur de fond sombre */
+  min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  display: flex; /* Utilise Flexbox pour organiser le contenu */
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  font-size: calc(10px + 2vmin); /* Définit une taille de police responsive */
+  color: white; /* Définit la couleur du texte en blanc */
+}
+
+.App-link {
+  color: #61dafb; /* Définit la couleur des liens en bleu clair */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Début de l'animation : aucune rotation */
+  }
+  to {
+    transform: rotate(360deg); /* Fin de l'animation : rotation complète */
+  }
+}
+
+body {
+  display: flex; /* Utilise Flexbox pour organiser le contenu */
+  flex-direction: column; /* Aligne les éléments verticalement */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement */
+  height: 100vh; /* Prend toute la hauteur de la fenêtre */
+  margin: 0; /* Supprime les marges par défaut */
+}
+
+h1 {
+  font-size: 2rem; /* Définit une taille de police pour le titre */
+  margin-bottom: 3rem; /* Ajoute un espace en bas du titre */
+}
+
+.greeting {
+  font-size: 1.5rem; /* Définit une taille de police pour le composant Greeting */
+  margin-bottom: 1rem; /* Ajoute un espace en bas du composant Greeting */
+}
+
+.counter {
+  border: 3px solid blue; /* Ajoute une bordure bleue claire autour du compteur */
+  border-radius: 10px; /* Ajoute des coins arrondis à la bordure */
+  padding: 20px; /* Ajoute un espace intérieur autour du compteur */
+  background-color: rgba(255, 255, 255, 0.1); /* Définit une couleur de fond semi-transparente */
+  color: black; /* Définit la couleur du texte en blanc */
+  font-size: 1.5rem; /* Définit une taille de police pour le compteur */
+  margin-bottom: 2rem; /* Ajoute un espace en bas du compteur */
+  transition: background-color 0.3s ease; /* Ajoute une transition pour le changement de couleur de fond */
+}
+
+.btnIncrement {
+  background-color: blue; /* Définit une couleur de fond bleue pour le bouton */
+  color: white; /* Définit la couleur du texte en blanc */
+  border: none; /* Supprime la bordure par défaut */
+  padding: 10px 20px; /* Ajoute un espace intérieur au bouton */
+  font-size: 1rem; /* Définit une taille de police pour le bouton */
+  cursor: pointer; /* Change le curseur en pointeur lors du survol */
+  border-radius: 5px; /* Ajoute des coins arrondis */
+  transition: background-color 0.3s ease; /* Ajoute une transition pour le changement de couleur */
+}
+
+.btnIncrement:hover {
+  background-color: darkblue; /* Change la couleur de fond en bleu foncé lors du survol */
+}
